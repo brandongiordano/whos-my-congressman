@@ -1,3 +1,21 @@
 body {
-    color: black;
+    height: 100%;
+    background-color: black;
 }
+
+.hero-image {
+    border: 2px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/379770-PC477B-889.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.search-bar {
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
