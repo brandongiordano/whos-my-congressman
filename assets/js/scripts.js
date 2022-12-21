@@ -13,7 +13,6 @@ function getName(){
         return response.json();
     })
     .then(function (data) {
-        //console.log(data.officials[2], data.officials[3]);
         wikiAPI(data.officials[2].name);
     })
 
@@ -31,11 +30,17 @@ function wikiAPI( name){
                 response.json().then(function(data){
                     console.log(data);
                     console.log(data.query.search[0].snippet);
+                    displayInfo(data);
                 })
             }
             else{
                 console.log("failed")
             }
     })
+}
+
+function displayInfo(data) {
+   $("#congressman-name").html(data.query.search[0].title);
+   console.log("test", data);
 }
 getName();
