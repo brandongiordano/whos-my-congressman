@@ -6,10 +6,6 @@ fetch(url)
         return response.json();
     })
     .then(function (data) {
-<<<<<<< HEAD
-        console.log(data);
-    })
-=======
         wikiAPI(data.officials[2].name);
     })
 
@@ -41,4 +37,3 @@ function displayInfo(data) {
    console.log("test", data);
 }
 getName();
->>>>>>> 9512305 (populate politicians name)
