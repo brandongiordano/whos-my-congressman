@@ -1,6 +1,29 @@
-<<<<<<< HEAD
+
 body {
-    color: black;
+
+    height: 50%;
+
 }
-=======
->>>>>>> 41c753925cc92e7ad3a679d541a6035e8d71029b
+
+.hero {
+    position: relative;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    
+ }
+
+
+ .hero-content {
+    position: relative;
+ }
+
