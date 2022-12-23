@@ -22,9 +22,12 @@ function getName(){
 }
 
 function getInfo(data) {
-
-    var party = data.officials[4].party;
-    $("#party").append(party);
+    for (i=2; 1<i<5; i++){
+    var party = data.officials[i].party;
+    var name = data.officials[i].name;
+    $("#congressman-name"+i).html(name);
+    $("#party"+i).append(party);
+    }
 }
 
 function wikiAPI( name){
