@@ -9,15 +9,23 @@ function getName(){
     var url = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyDJCpCj0C6xd_ucZHhLQ7_W6nJNGDi5Sjc&address="+ address;
     fetch(url)
     .then(function (response) {
-        //console.log(response);
+        //console.log("google", response);
         return response.json();
     })
     .then(function (data) {
+        console.log("google", data);
         wikiAPI(data.officials[2].name);
-    })
+        getInfo(data);
 
+        
+    })
 }
 
+function getInfo(data) {
+
+    var party = data.officials[4].party;
+    $("#party").append(party);
+}
 
 function wikiAPI( name){
     
