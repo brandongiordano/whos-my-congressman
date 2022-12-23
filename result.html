@@ -16,22 +16,71 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body style="height:flex;">
-    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-lg-0 " id="nav-bar">
-        <a class="navbar-brand" href="./index.html">Who's My Congressman?</a>
-    </nav>
-    <div class="card" style="width:flex; height:flex;" id="congressman-card">
-      <img src="./Portrait_Placeholder.png" class="img" alt="picture of congressman">
-      <div class="card-body">
-        <h5 class="card-title" id="congressman-name">Name</h5>
-        <p class="card-text" id="brief-summary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+  <body>
+    <header>
+      <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-lg-0 " id="nav-bar">
+          <a class="navbar-brand" href="./index.html">Who's My Congressman?</a>
+      </nav>
+    </header>
+    
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
+            alt="Skyscrapers" />
+          <div class="card-body">
+            <h5 class="card-title">Congressman name</h5>
+            <ul class="list-group list-group-flush" id="congressman-info">
+              <li class="list-group-item" id="party"> <label>Party:</label></li>
+              <li class="list-group-item" id="state"> <label>State:</label></li>
+              <li class="list-group-item" id="birthday"> <label>Date of Birth:</label></li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
       </div>
-      <ul class="list-group list-group-flush" id="congressman-info">
-        <li class="list-group-item" id="party"> <label>Party:</label></li>
-        <li class="list-group-item" id="state"> <label>State:</label></li>
-        <li class="list-group-item" id="birthday"> <label>Date of Birth:</label></li>
-      </ul>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+            alt="Los Angeles Skyscrapers" />
+          <div class="card-body">
+            <h5 class="card-title">Congressman name</h5>
+            <ul class="list-group list-group-flush" id="congressman-info">
+              <li class="list-group-item" id="party"> <label>Party:</label></li>
+              <li class="list-group-item" id="state"> <label>State:</label></li>
+              <li class="list-group-item" id="birthday"> <label>Date of Birth:</label></li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+            alt="Palm Springs Road" />
+          <div class="card-body">
+            <h5 class="card-title">Congressman name</h5>
+            <ul class="list-group list-group-flush" id="congressman-info">
+              <li class="list-group-item" id="party"> <label>Party:</label></li>
+              <li class="list-group-item" id="state"> <label>State:</label></li>
+              <li class="list-group-item" id="birthday"> <label>Date of Birth:</label></li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    </div>
+
     <script src="./assets/js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyDJCpCj0C6xd_ucZHhLQ7_W6nJNGDi5Sjc&address=1263%20Pacific%20Ave.%20Kansas%20City%20KS"></script>
