@@ -10,9 +10,16 @@
 
 }
 
+#cards {
+  margin-top: 40px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 39px;
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .img {
