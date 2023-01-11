@@ -5,12 +5,17 @@ body {
 
 }
 
+#title {
+    padding-left: 25px;
+}
+
 .hero {
     position: relative;
     content: "";
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url("../images/Background.jpg") no-repeat center center fixed;
@@ -22,6 +27,12 @@ body {
     
  }
 
+ #info {
+    margin: 20px;
+    background-color: rgb(248,249,250);
+    padding: 12px;
+    border-radius: 2.5px;
+ }
 
  .hero-content {
     position: relative;

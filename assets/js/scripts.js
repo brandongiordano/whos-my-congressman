@@ -1,15 +1,10 @@
 
-                                                                                                                 
-var firstName;
-var lastName;
 var address = document.location.search.split('=');
-var name;
 
 function getName(){
     var url = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyDJCpCj0C6xd_ucZHhLQ7_W6nJNGDi5Sjc&address="+ address;
     fetch(url)
     .then(function (response) {
-        //console.log("google", response);
         return response.json();
     })
     .then(function (data) {
@@ -55,7 +50,6 @@ function wikiAPI( name){
             if(response.ok){
                 response.json().then(function(data){
                     console.log(data);
-                    console.log(data.query.search[0].snippet);
                     displayInfo(data);
                 })
             }
